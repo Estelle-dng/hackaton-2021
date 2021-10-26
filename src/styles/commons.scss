@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Kulim+Park:wght@300;400;600&display=swap");
+$fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
+// @import "~@fortawesome/fontawesome-free/scss/fontawesome";
+// @import "~@fortawesome/fontawesome-free/scss/solid";
+@font-face {
+  font-family: "Butler-extra-bold";
+  src: url("../assets/typo/Butler_ExtraBold.otf");
+}
+
+@font-face {
+  font-family: "Butler-medium";
+  src: url("../assets/typo/Butler_Medium.otf");
+}
+
+* {
+  box-sizing: border-box;
+}
+html {
+  width: 100vw;
+  overflow-x: hidden;
+}
+body {
+  height: 100%;
+  width: 100vw;
+  margin: 0;
+  overflow-x: hidden;
+  background-color: $albatre;
+  //font-family: $ff-kulim;
+}
+p {
+  line-height: 20px;
+}
+a {
+  color: $bistre;
+}
+a {
+  color: $bistre;
+}
+
+h1 {
+  font-size: 55px;
+  line-height: 63px;
+  //font-family: $ff-butler;
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 48px;
+  //font-family: $ff-butler;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 27px;
+  //font-family: $ff-kulim;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 32px;
+  line-height: 38px;
+  //font-family: $ff-butler;
+}
+
+button {
+  background-color: $bistre;
+  border-radius: 3px;
+  padding: 20px 26px 20px 26px;
+  border: none;
+  a {
+    color: $albatre;
+    text-decoration: none;
+    font-size: 16px;
+    //font-family: $ff-kulim;
+  }
+  &:hover {
+    background-color: $bistre-hover;
+    transform: scale(0.95);
+    transition: 0.6s ease;
+  }
+}
+
+.button-secondary {
+  border-radius: 3px;
+  border: 1px solid $olive;
+  background-color: beige;
+  a {
+    color: $olive;
+    text-decoration: none;
+    font-size: 16px;
+    //font-family: $ff-kulim;
+  }
+  &:hover {
+    background-color: $secondary-button-hover;
+  }
+}

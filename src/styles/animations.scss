@@ -1,0 +1,41 @@
+@keyframes loading {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes going {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+}
+@keyframes coming {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.router-anim-enter-active {
+  animation: coming 1s;
+  animation-delay: 1s;
+  opacity: 0;
+}
+
+.router-anim-leave-active {
+  animation: going 1s;
+}
