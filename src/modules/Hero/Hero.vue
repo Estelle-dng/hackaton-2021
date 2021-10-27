@@ -1,41 +1,45 @@
 <template>
-  <div class="hero-container">
-    <div class="hero-img">
-      <img src="@/assets/img/hero_landing.jpg" alt="" />
-    </div>
-    <div class="text-bloc">
-      <h1 class="title">
-        title
-      </h1>
-      <p class="text">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe vitae cupiditate officia temporibus itaque non dolore qui eum deleniti voluptatibus, nemo quod? Eligendi labore delectus amet, laboriosam perferendis ea laudantium.
-      </p>
-      <div class="button-group">
-        <Button
-          isRouter
-          ariaLabel="je suis un cta"
-          link="#"
-          text="je suis un cta"
-          class="cta-button"
-        />
-        <Button
-          :isRouter="false"
-          ariaLabel="je suis un cta secondaire"
-          link="#"
-          text="cta secondary"
-          class="cta-button button-secondary"
-        />
+  <Wrapper>
+    <div class="hero-container">
+      <div class="hero-img">
+        <!-- <img src="@/assets/img/hero_landing.jpg" alt="" /> -->
+      </div>
+      <div class="text-bloc">
+        <h1 class="title">title</h1>
+        <p class="text">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe vitae
+          cupiditate officia temporibus itaque non dolore qui eum deleniti
+          voluptatibus, nemo quod? Eligendi labore delectus amet, laboriosam
+          perferendis ea laudantium.
+        </p>
+        <div class="button-group">
+          <Button
+            isRouter
+            ariaLabel="je suis un cta"
+            link="#"
+            text="je suis un cta"
+            class="cta-button button-primary"
+          />
+          <Button
+            :isRouter="false"
+            ariaLabel="je suis un cta secondaire"
+            link="#"
+            text="cta secondary"
+            class="cta-button button-secondary"
+          />
+        </div>
       </div>
     </div>
-  </div>
+  </Wrapper>
 </template>
 
 <script>
 import Button from "@/components/Button";
+import Wrapper from "@/components/Wrapper";
 
 export default {
   name: "Navbar",
-  components: { Button },
+  components: { Button, Wrapper },
 };
 </script>
 
@@ -46,12 +50,11 @@ export default {
     position: relative;
     max-width: calc(50vw - 120px);
     .title {
-      color: beige;
+      color: $dark-gray;
     }
     .text {
       padding-top: 16px;
       font-size: 20px;
-      color: white;
       font-weight: 300;
       line-height: 33px;
     }
@@ -59,6 +62,7 @@ export default {
       margin-top: 32px;
       margin-right: 6px;
     }
+    .button-primary{border: 1px solid $purple;}
   }
   .hero-img {
     width: 100%;
@@ -67,7 +71,7 @@ export default {
     right: 0;
     top: 0;
     z-index: -1;
-    img{
+    img {
       width: 100%;
       height: 100%;
       object-fit: cover;

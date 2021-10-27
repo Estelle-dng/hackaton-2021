@@ -1,33 +1,45 @@
 <template>
-  <nav class="navbar">
-    <div>
-      <a href="#">
-        <img
-          class="logo"
-          src="@/assets/logo.png"
-          alt="logo"
-        />
-      </a>
-    </div>
-    <div>
-      <Button
-        :isRouter="false"
-        text="CTA"
-        ariaLabel="CTA"
-        link="#"
-        className="nav-button"
-        classA="nav-a"
-      />
-    </div>
-  </nav>
+  <Wrapper>
+    <nav class="navbar">
+      <div>
+        <a href="#accueil">
+          <img class="logo" src="@/assets/logo.png" alt="logo" />
+        </a>
+      </div>
+      <div>
+        <ul>
+          <li>
+            <a href="#accueil">Accueil</a>
+          </li>
+          <li>
+            <a href="#concept">Notre concept</a>
+          </li>
+          <li>
+            <a href="#about">À propos</a>
+          </li>
+          <li>
+            <Button
+            :isRouter="false"
+            text="Devenir partenaire"
+            ariaLabel="partner"
+            link="#partner"
+            className="nav-button"
+            classA="nav-a"
+            />
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </Wrapper>
 </template>
 
 <script>
 import Button from "@/components/Button";
+import Wrapper from "@/components/Wrapper";
 
 export default {
   name: "Navbar",
-  components: { Button },
+  components: { Button, Wrapper },
 };
 </script>
 
@@ -37,14 +49,18 @@ export default {
   align-items: center;
   justify-content: space-between;
   padding-top: 24px;
-  .nav-button {
-    background-color: beige;
-    border: 1px solid rgb(57, 56, 151);
-    @media (max-width: 500px) {
-      display: none;
-    }
-    .nav-a {
-      color: rgb(57, 56, 151);
+  ul{
+    justify-content: space-between;
+    display: flex;
+    li{
+      margin-top: 15px;
+      margin-left:10px;
+      &:last-child{margin-top: 0;}
+      .nav-button {
+        line-height: 15px;
+        background-color: $ice;
+        border: 1px solid $purple;
+      }
     }
   }
   .logo {

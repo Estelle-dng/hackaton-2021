@@ -41,7 +41,7 @@ export default {
   display: flex;
   padding: 70px 120px 73px 120px;
   height: 203px;
-  background-color: rgb(180, 168, 168);
+  background-color: $yellow;
   .logo {
     margin-top: -35px;
     width: 165px;
@@ -62,29 +62,29 @@ export default {
         li {
           padding-right: 20px;
           a {
-            color: beige;
+            color: $ice;
             font-size: 16px;
-            font-family: "Kulim-regular";
+            font-family: "ubuntu";
           }
         }
       }
     }
     .copyright {
-      color: beige;
+      color: $ice;
       text-align: center;
       font-size: 14px;
-      font-family: "Kulim-regular";
+      font-family: "ubuntu";
     }
   }
   .socials {
-    color: beige;
+    color: $ice;
     p {
       padding-bottom: 10px;
     }
     .rs {
       display: flex;
       font-size: 14px;
-      font-family: "Kulim-regular";
+      font-family: "ubuntu";
       img {
         height: 16px;
         width: 16px;

@@ -11,7 +11,7 @@ export default {
 </script>
 
 <style scoped>
-  #app{
-    position: relative;
-  }
+#app {
+  position: relative;
+}
 </style>
