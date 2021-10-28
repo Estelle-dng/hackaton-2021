@@ -1,6 +1,6 @@
 <template>
-<Wrapper>
   <div id="partners" class="partners d-flex">
+<Wrapper>
       <div class="w50">
         <img src="../../../public/img/feature-desktop.png" alt="">
       </div>
@@ -17,8 +17,8 @@
               classA="nav-a"
               />
       </div>
-    </div>
   </Wrapper>
+    </div>
 </template>
 
 <script>
@@ -32,19 +32,26 @@ export default {
 
 <style lang="scss" scoped>
 .partners{
-  padding:100px 0;
+  background-color: $dark-gray;
+  #main-wrapper{
+    color: $ice;
+    padding-top:100px;
+    padding-bottom: 80px;
+    display: flex;
   .w50:first-child{padding-right: 15px;}
   .w50:last-child{
     padding-left: 15px;
     margin-top: 55px;
     }
-  h3, h4{margin-bottom: 15px;}
-  p{margin-bottom: 25px;}
+  h3{margin-bottom: 15px;}
+  h4{margin-bottom: 50px;}
+  p{margin-bottom: 50px;}
   img{
     height: 100%;
     width: 100%;
     object-fit: contain;
     object-position: center;
+  }
   }
 }
 </style>

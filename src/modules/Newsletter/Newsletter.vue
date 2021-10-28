@@ -77,7 +77,7 @@ export default {
     }
   }
   textarea{
-    width: 100% !important;
+    width: 95% !important;
     height: 150px;
     margin-right: 30px;
     font-family: $ff-spartan;
