@@ -31,11 +31,10 @@ p {
   line-height: 20px;
 }
 a {
-  color: $purple;
+  color: $dark-gray;
   text-decoration: none;
 }
 a:hover {
-  color: $purple;
   opacity: 0.8;
 }
 
@@ -52,25 +51,36 @@ h2 {
 }
 
 h3 {
-  font-size: 24px;
-  line-height: 27px;
+  font-size: 32px;
+  line-height: 38px;
   font-family: $ff-lust;
   font-weight: 600;
 }
 
 h4 {
-  font-size: 32px;
-  line-height: 38px;
+  font-size: 24px;
+  line-height: 27px;
   font-family: $ff-lust;
 }
 
+h5 {
+  font-size: 20px;
+  line-height: 23px;
+  font-family: $ff-lust;
+}
+
+h6 {
+  font-size: 18px;
+  line-height: 21px;
+  font-family: $ff-lust;
+}
 button {
-  background-color: $ice;
-  border-radius: 3px;
+  background-color: $yellow;
+  border-radius: 24px;
   padding: 15px 20px;
   border: none;
   a {
-    color: $purple;
+    color: $dark-gray;
     text-decoration: none;
     font-size: 16px;
     font-family: $ff-spartan;
@@ -82,13 +92,15 @@ button {
 }
 
 .button-secondary {
-  border-radius: 3px;
-  border: 1px solid $dark-gray;
-  background-color: $ice;
+  border-radius: 24px;
+  background-color: $dark-gray;
   a {
-    color: $dark-gray;
+    color: $ice;
     text-decoration: none;
     font-size: 16px;
     font-family: $ff-spartan;
   }
 }
+
+.d-flex{display: flex;}
+.w50{width: 50%;}

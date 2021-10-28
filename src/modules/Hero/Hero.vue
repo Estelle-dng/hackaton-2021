@@ -1,116 +1,187 @@
 <template>
+  <section class="main">
   <Wrapper>
-    <div class="hero-container">
-      <div class="hero-img">
-        <!-- <img src="@/assets/img/hero_landing.jpg" alt="" /> -->
-      </div>
-      <div class="text-bloc">
-        <h1 class="title">title</h1>
-        <p class="text">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe vitae
-          cupiditate officia temporibus itaque non dolore qui eum deleniti
-          voluptatibus, nemo quod? Eligendi labore delectus amet, laboriosam
-          perferendis ea laudantium.
-        </p>
-        <div class="button-group">
-          <Button
-            isRouter
-            ariaLabel="je suis un cta"
-            link="#"
-            text="je suis un cta"
-            class="cta-button button-primary"
-          />
-          <Button
-            :isRouter="false"
-            ariaLabel="je suis un cta secondaire"
-            link="#"
-            text="cta secondary"
-            class="cta-button button-secondary"
-          />
+      <section class="card-lg__container">
+        <p class="card__text-sm">Mosae - Votre guide culturel Bordelais</p>
+        <h1 class="card__text-lg">Découvrir l'art de la ville</h1>
+        <p class="card__text-md">Trouvez les évènements culturels près de chez vous.</p>
+        <div class="d-flex">
+          <a href="#" class="card__btn">IOS</a>
+          <a href="#" class="card__btn">Android</a>
+          <a href="#" class="card__btn">Desktop</a>
         </div>
-      </div>
-    </div>
+      </section>
+
+      <section class="card-sm__container">
+        <!--- START: CARD --->
+        <section class="card-sm" style="background-image:url('https://images.unsplash.com/photo-1584962356612-f7092400e895?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60')">
+          <p class="card__text-sm">Tanifa - Spain</p>
+          <h1 class="card__text-lg">Los Lances Beach</h1>
+        </section>
+        <!--- END: CARD --->
+
+        <!--- START: CARD --->
+        <section class="card-sm" style="background-image: url('https://images.unsplash.com/photo-1489823480956-0204142cfebd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60'); background-position: center right;">
+          <p class="card__text-sm">Japan Alps</p>
+          <h1 class="card__text-lg">Nagano Prefecture</h1>
+        </section>
+        <!--- END: CARD --->
+
+        <!--- START: CARD --->
+        <section class="card-sm" style="background-image: url('https://images.unsplash.com/photo-1527549993586-dff825b37782?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60')">
+          <p class="card__text-sm">Sierra Nevada - USA</p>
+          <h1 class="card__text-lg">Yosemite National  </h1>
+        </section>
+        <!--- END: CARD --->
+
+        <!--- START: CARD --->
+        <section class="card-sm" style="background-image: url('https://images.unsplash.com/photo-1537431701805-c1bb45cd2f92?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60')">
+          <p class="card__text-sm">Cappadocia - Turkey</p>
+          <h1 class="card__text-lg">Goreme &nbsp; Valley</h1>
+        </section>
+        <!--- END: CARD --->
+      </section>
   </Wrapper>
+  </section>
 </template>
 
 <script>
-import Button from "@/components/Button";
-import Wrapper from "@/components/Wrapper";
-
+import Wrapper from '@/components/Wrapper';
 export default {
   name: "Navbar",
-  components: { Button, Wrapper },
+  components:{
+    Wrapper
+  }
 };
 </script>
 
 <style lang="scss" scoped>
-.hero-container {
-  height: calc(100vh - 206px);
-  .text-bloc {
-    position: relative;
-    max-width: calc(50vw - 120px);
-    .title {
-      color: $dark-gray;
-    }
-    .text {
-      padding-top: 16px;
-      font-size: 20px;
-      font-weight: 300;
-      line-height: 33px;
-    }
-    .cta-button {
-      margin-top: 32px;
-      margin-right: 6px;
-    }
-    .button-primary{border: 1px solid $purple;}
-  }
-  .hero-img {
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: -1;
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center;
-    }
+#main-wrapper{
+  display: flex;
+  height: calc(100vh - 100px);
+}
+/*CARD*/
+.card__btn {
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.5);
+  border-radius: 24px;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100px;
+  margin: 8px 0 0;
+  opacity: 0.5;
+  padding: 8px;
+  margin-right: 15px;
+  &:hover {
+    transform: scale(0.95);
+    transition: 0.6s ease;
   }
 }
-@media screen and (max-width: 768px) {
-  .hero-container {
-    padding: 0 14px 70px 14px;
-    .text-bloc {
-      max-width: 100%;
-      padding-top: 200px;
-      .title {
-        font-size: 32px;
-        line-height: 36px;
-        font-weight: 800;
-      }
-      .text {
-        font-size: 18px;
-        line-height: 33px;
-      }
-      .button-group {
-        text-align: center;
-        .cta-button {
-          width: 66%;
-        }
-      }
-    }
-    .hero-img {
-      position: relative;
-      height: 15vh;
-      img {
-        position: absolute;
-        height: 600px;
-        width: auto;
-        right: -14px;
-      }
-    }
+.card__text-sm {
+  color: #fff;
+  font-size: 18px;
+  margin: 0;
+  padding: 16px 0 8px;
+  position: relative;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.card__text-sm::before {
+  content: "";
+  background: #fff;
+  height: 1px;
+  width: 16px;
+  position: absolute;
+  top: 0;
+}
+.card__text-lg {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 300;
+  text-transform: uppercase;
+  line-height: 1.2;
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/*...large...*/
+.card-lg__container {
+  padding: 0 16px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow-x: scroll;
+
+  .card__text-lg {
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 1.4px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  } 
+  .card__text-md {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 100;
+    line-height: 1.5;
+    padding: 0 32px 0 0;
+    opacity: 0.5;
+  }
+  .card__text-sm {
+    font-size: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .card__text-sm::before {
+    width: 24px;
+    height: 2px;
   }
 }
+/*...small...*/
+.card-sm__container {
+  height: 300px;
+  margin: 0 -125px 0 0;
+  display: flex;
+  align-self: center;
+  overflow-x: scroll;
+}
+.card-sm {
+  background: #ccc;
+  background-size: cover; 
+  background-position: center center;
+  box-shadow: inset 0 0 100vw 100vw rgba(0, 0, 0, 0.3),
+    0 16px 8px -8px rgba(0,0,0,0.4);
+  border-radius: 8px;
+  width: 150px;
+  height: calc(100% - 64px); 
+  margin: 0 8px;
+  padding: 24px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s ease;
+  
+  &:hover {
+    margin: -8px 8px 0;
+  }
+  
+  .card__text-sm { 
+    opacity: 0.8;
+  }
+  
+}
+
+
+/*HIDE DEFAULT SCROLL BAR*/
+// .main::-webkit-scrollbar {
+//   display: none;
+// }
+
+// .main {
+//   -ms-overflow-style: none;
+// }
 </style>

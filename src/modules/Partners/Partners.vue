@@ -1,0 +1,50 @@
+<template>
+<Wrapper>
+  <div class="partners d-flex">
+      <div class="w50">
+        <img src="../../../public/img/feature-desktop.png" alt="">
+      </div>
+      <div class="w50">
+        <h3>DEVENIR PARTENAIRES</h3>
+        <h4>Faites découvrir vos évènements facilement.</h4>
+        <p>Vous représentez une ville, une organisation et vous souhaitez utiliser Mosae pour promouvoir votre art ? Faites une demande de partenariat via le formulaire ci-dessous et nous vous recontacterons très rapidement.</p>
+        <Button
+              :isRouter="false"
+              text="Proposez vos évènements"
+              ariaLabel="partner"
+              link="#partner"
+              className="nav-button"
+              classA="nav-a"
+              />
+      </div>
+    </div>
+  </Wrapper>
+</template>
+
+<script>
+import Button from '@/components/Button';
+import Wrapper from '@/components/Wrapper';
+export default {
+  name: "Partners",
+  components:{Button, Wrapper}
+};
+</script>
+
+<style lang="scss" scoped>
+.partners{
+  padding:100px 0;
+  .w50:first-child{padding-right: 15px;}
+  .w50:last-child{
+    padding-left: 15px;
+    margin-top: 55px;
+    }
+  h3, h4{margin-bottom: 15px;}
+  p{margin-bottom: 25px;}
+  img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+  }
+}
+</style>

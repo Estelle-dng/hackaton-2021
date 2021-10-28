@@ -10,12 +10,12 @@ export default {};
 
 <style lang="scss">
 #main-wrapper {
-  padding: 0 120px 30px;
+  padding: 0 120px;
   @media (max-width: 900px) {
-    padding: 0 60px 30px;
+    padding: 0 60px;
   }
   @media (max-width: 550px) {
-    padding: 0 10px 0px;
+    padding: 0 10px;
   }
 }
 </style>

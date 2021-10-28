@@ -1,9 +1,10 @@
 <template>
   <Wrapper>
+    <div class="hero"></div>
     <nav class="navbar">
       <div>
         <a href="#accueil">
-          <img class="logo" src="../../../public/logo.png" alt="logo" />
+          <img class="logo" src="../../../public/logo-light.png" alt="logo" />
         </a>
       </div>
       <div>
@@ -44,23 +45,35 @@ export default {
 </script>
 
 <style lang="scss">
+.hero {
+  background: #ccc;
+  background: url('../../../public/img/hero.jpg') no-repeat center center;
+  background-size: cover;
+  box-shadow: 
+    inset 0 0 100vw 100vw rgba(0,0,0,0.3),0 16px 8px -8px rgba(0, 0, 0, 0.4);
+  width: 100vw;
+  height: 100vh;
+  top:0;
+  left:0;
+  position: absolute;
+  z-index: -1;
+}
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 24px;
+  height: 100px;
   ul{
     justify-content: space-between;
     display: flex;
     li{
       margin-top: 15px;
       margin-left:10px;
-      &:last-child{margin-top: 0;}
-      .nav-button {
-        line-height: 15px;
-        background-color: $ice;
-        border: 1px solid $purple;
-      }
+      a{color: $ice;}
+      &:last-child{
+        margin-top: 0;
+        a{color: $dark-gray;}
+        }
     }
   }
   .logo {

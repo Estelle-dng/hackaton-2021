@@ -39,7 +39,13 @@ export default {
 .footer {
   justify-content: space-between;
   display: flex;
-  padding: 70px 120px 73px 120px;
+  padding: 70px 120px 30px;
+  @media (max-width: 900px) {
+    padding: 60px 30px;
+  }
+  @media (max-width: 550px) {
+    padding: 10px 0px;
+  }
   height: 203px;
   background-color: $yellow;
   .logo {
