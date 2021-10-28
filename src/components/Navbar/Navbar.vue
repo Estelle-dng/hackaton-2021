@@ -72,7 +72,6 @@ export default {
       a{color: $ice;}
       &:last-child{
         margin-top: 0;
-        a{color: $dark-gray;}
         }
     }
   }

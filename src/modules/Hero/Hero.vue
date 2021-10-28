@@ -14,30 +14,30 @@
 
       <section class="card-sm__container">
         <!--- START: CARD --->
-        <section class="card-sm" style="background-image:url('https://images.unsplash.com/photo-1584962356612-f7092400e895?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60')">
-          <p class="card__text-sm">Tanifa - Spain</p>
-          <h1 class="card__text-lg">Los Lances Beach</h1>
+        <section class="card-sm" style="background-image:url('/img/accueil.png')">
+          <p class="card__text-sm">Une selection</p>
+          <h6 class="card__text-lg">Personnalisée d'oeuvres originales chaque semaine</h6>
         </section>
         <!--- END: CARD --->
 
         <!--- START: CARD --->
-        <section class="card-sm" style="background-image: url('https://images.unsplash.com/photo-1489823480956-0204142cfebd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60'); background-position: center right;">
-          <p class="card__text-sm">Japan Alps</p>
-          <h1 class="card__text-lg">Nagano Prefecture</h1>
+        <section class="card-sm" style="background-image:url('/img/profil.png')">
+          <p class="card__text-sm">Un profil</p>
+          <h6 class="card__text-lg">Avec votre planning d'évènements</h6>
         </section>
         <!--- END: CARD --->
 
         <!--- START: CARD --->
-        <section class="card-sm" style="background-image: url('https://images.unsplash.com/photo-1527549993586-dff825b37782?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60')">
-          <p class="card__text-sm">Sierra Nevada - USA</p>
-          <h1 class="card__text-lg">Yosemite National  </h1>
+        <section class="card-sm" style="background-image:url('/img/evenement.png')">
+          <p class="card__text-sm">Des évènements</p>
+          <h6 class="card__text-lg">Détaillés et exclusifs</h6>
         </section>
         <!--- END: CARD --->
 
         <!--- START: CARD --->
-        <section class="card-sm" style="background-image: url('https://images.unsplash.com/photo-1537431701805-c1bb45cd2f92?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60')">
-          <p class="card__text-sm">Cappadocia - Turkey</p>
-          <h1 class="card__text-lg">Goreme &nbsp; Valley</h1>
+        <section class="card-sm" style="background-image:url('/img/calendrier.png')">
+          <p class="card__text-sm">Un calendrier</p>
+          <h6 class="card__text-lg">Détaillé des évènements dans votre ville</h6>
         </section>
         <!--- END: CARD --->
       </section>
@@ -63,7 +63,7 @@ export default {
 /*CARD*/
 .card__btn {
   color: #fff;
-  border: 1px solid rgba(255,255,255,0.5);
+  border: 1px solid rgba(255,255,255,0.8);
   border-radius: 24px;
   font-size: 14px;
   text-align: center;
@@ -71,7 +71,7 @@ export default {
   text-transform: uppercase;
   width: 100px;
   margin: 8px 0 0;
-  opacity: 0.5;
+  opacity: 0.8;
   padding: 8px;
   margin-right: 15px;
   &:hover {
@@ -98,7 +98,7 @@ export default {
 }
 .card__text-lg {
   color: #fff;
-  font-size: 22px;
+  font-size: 15px;
   font-weight: 300;
   text-transform: uppercase;
   line-height: 1.2;
@@ -116,7 +116,7 @@ export default {
   overflow-x: scroll;
 
   .card__text-lg {
-    font-size: 40px;
+    font-size: 20px;
     font-weight: 400;
     letter-spacing: 1.4px;
     overflow: hidden;
@@ -128,7 +128,7 @@ export default {
     font-weight: 100;
     line-height: 1.5;
     padding: 0 32px 0 0;
-    opacity: 0.5;
+    opacity: 0.8;
   }
   .card__text-sm {
     font-size: 15px;
@@ -136,7 +136,7 @@ export default {
     text-overflow: ellipsis;
   }
   .card__text-sm::before {
-    width: 24px;
+    width: 15px;
     height: 2px;
   }
 }
@@ -152,7 +152,7 @@ export default {
   background: #ccc;
   background-size: cover; 
   background-position: center center;
-  box-shadow: inset 0 0 100vw 100vw rgba(0, 0, 0, 0.3),
+  box-shadow: inset 0 0 100vw 100vw rgba(0, 0, 0, 0.5),
     0 16px 8px -8px rgba(0,0,0,0.4);
   border-radius: 8px;
   width: 150px;
@@ -177,11 +177,22 @@ export default {
 
 
 /*HIDE DEFAULT SCROLL BAR*/
-// .main::-webkit-scrollbar {
-//   display: none;
-// }
+.card-sm__container::-webkit-scrollbar {
+  display: none;
+}
 
-// .main {
-//   -ms-overflow-style: none;
-// }
+/* Hide scrollbar for Chrome, Safari and Opera */
+.card-sm__container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.card-sm__container {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.card-sm__container {
+  -ms-overflow-style: none;
+}
 </style>

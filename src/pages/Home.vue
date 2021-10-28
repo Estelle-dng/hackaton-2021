@@ -5,8 +5,8 @@
     </header>
     <main>
       <Hero />
-      <Partners/>
-      <Newsletter/>
+      <Partners />
+      <Newsletter />
     </main>
     <footer>
       <Footer />
@@ -27,7 +27,7 @@ export default {
     Hero,
     Footer,
     Partners,
-    Newsletter
+    Newsletter,
   },
 };
 </script>
