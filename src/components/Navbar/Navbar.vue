@@ -3,7 +3,7 @@
     <nav class="navbar">
       <div>
         <a href="#accueil">
-          <img class="logo" src="@/assets/logo.png" alt="logo" />
+          <img class="logo" src="../../../public/logo.png" alt="logo" />
         </a>
       </div>
       <div>

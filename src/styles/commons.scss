@@ -1,11 +1,14 @@
+@import url("https://p.typekit.net/p.css?s=1&k=mis0ibp&ht=tk&f=22000.45880.22001.45881.22002.22003.22004.22005.45882.45883.45878.45879&a=30102054&app=typekit&e=css");
+
 @font-face {
-  font-family: "ubuntu";
-  src: url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap");
+  font-family: "spartan";
+  src: url('https://fonts.googleapis.com/css2?family=Spartan:wght@500&family=Ubuntu:wght@500&display=swap');
 }
 
 @font-face {
-  font-family: "geomanist";
-  src: url("/fonts/Geomanist-Regular.ttf");
+font-family:"lust";
+src:url("https://use.typekit.net/af/777bed/00000000000000007735ddc7/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/777bed/00000000000000007735ddc7/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/777bed/00000000000000007735ddc7/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:700;
 }
 
 * {
@@ -22,7 +25,7 @@ body {
   margin: 0;
   overflow-x: hidden;
   background-color: $ice;
-  font-family: $ff-geomanist;
+  font-family: $ff-spartan;
 }
 p {
   line-height: 20px;
@@ -39,26 +42,26 @@ a:hover {
 h1 {
   font-size: 55px;
   line-height: 63px;
-  font-family: $ff-ubuntu;
+  font-family: $ff-lust;
 }
 
 h2 {
   font-size: 40px;
   line-height: 48px;
-  font-family: $ff-ubuntu;
+  font-family: $ff-lust;
 }
 
 h3 {
   font-size: 24px;
   line-height: 27px;
-  font-family: $ff-ubuntu;
+  font-family: $ff-lust;
   font-weight: 600;
 }
 
 h4 {
   font-size: 32px;
   line-height: 38px;
-  font-family: $ff-ubuntu;
+  font-family: $ff-lust;
 }
 
 button {
@@ -70,7 +73,7 @@ button {
     color: $purple;
     text-decoration: none;
     font-size: 16px;
-    font-family: $ff-geomanist;
+    font-family: $ff-spartan;
   }
   &:hover {
     transform: scale(0.95);
@@ -86,6 +89,6 @@ button {
     color: $dark-gray;
     text-decoration: none;
     font-size: 16px;
-    font-family: $ff-geomanist;
+    font-family: $ff-spartan;
   }
 }

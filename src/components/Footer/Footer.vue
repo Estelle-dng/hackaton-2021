@@ -1,7 +1,7 @@
 <template>
   <div class="footer">
     <a class="logo" href="#">
-      <img src="@/assets/logo.png" alt="logo" />
+      <img src="../../../public/logo.png" alt="logo" />
     </a>
     <div class="centerContent">
       <div class="nav">
@@ -20,10 +20,10 @@
       <p>Suivez-nous</p>
       <div class="rs">
         <img
-          src="@/assets/img/icon-instagram.png"
+          src="../../../public/img/icon-instagram.png"
           alt="instagram redirection"
         />
-        <img src="@/assets/img/icon-fb.png" alt="facebook redirection" />
+        <img src="../../../public/img/icon-fb.png" alt="facebook redirection" />
       </div>
     </div>
   </div>
