@@ -103,7 +103,7 @@ export default {
     },
   },
   watch: {
-    slides: function(val) {
+    slides: function (val) {
       this.slideData = val;
     },
   },

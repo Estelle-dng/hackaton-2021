@@ -30,7 +30,6 @@ export default {
 </script>
 
 <style lang="scss">
-
 .not-clickable {
   pointer-events: none;
   opacity: 0.1;

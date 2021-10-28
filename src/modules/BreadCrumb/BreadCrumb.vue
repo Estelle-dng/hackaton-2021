@@ -8,9 +8,7 @@
       </div>
     </div>
     <div class="breadcrumb-anotation">
-      <div :class="innerWidth >= 33 ? 'complete' : ''">
-        1/3 - Les protéines
-      </div>
+      <div :class="innerWidth >= 33 ? 'complete' : ''">1/3 - Les protéines</div>
       <div :class="innerWidth >= 66 ? 'complete' : ''">
         2/3 - Les accompagnements
       </div>
@@ -39,7 +37,7 @@ export default {
     },
   },
   watch: {
-    valueChoosen: function(val) {
+    valueChoosen: function (val) {
       if (this.intervalId != null) {
         clearInterval(this.intervalId);
       }
@@ -59,7 +57,7 @@ export default {
 
       this.intervalId = animProgress;
     },
-    value: function(newVal) {
+    value: function (newVal) {
       this.valueChoosen = newVal;
     },
   },

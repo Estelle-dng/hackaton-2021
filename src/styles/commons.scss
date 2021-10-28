@@ -1,15 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Kulim+Park:wght@300;400;600&display=swap");
-$fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
-// @import "~@fortawesome/fontawesome-free/scss/fontawesome";
-// @import "~@fortawesome/fontawesome-free/scss/solid";
+@import url("https://p.typekit.net/p.css?s=1&k=mis0ibp&ht=tk&f=22000.45880.22001.45881.22002.22003.22004.22005.45882.45883.45878.45879&a=30102054&app=typekit&e=css");
+
 @font-face {
-  font-family: "Butler-extra-bold";
-  src: url("../assets/typo/Butler_ExtraBold.otf");
+  font-family: "spartan";
+  src: url('https://fonts.googleapis.com/css2?family=Spartan:wght@500&family=Ubuntu:wght@500&display=swap');
 }
 
 @font-face {
-  font-family: "Butler-medium";
-  src: url("../assets/typo/Butler_Medium.otf");
+font-family:"lust";
+src:url("https://use.typekit.net/af/777bed/00000000000000007735ddc7/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/777bed/00000000000000007735ddc7/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/777bed/00000000000000007735ddc7/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:700;
 }
 
 * {
@@ -18,63 +17,65 @@ $fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
 html {
   width: 100vw;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 body {
   height: 100%;
   width: 100vw;
   margin: 0;
   overflow-x: hidden;
-  background-color: $albatre;
-  //font-family: $ff-kulim;
+  background-color: $ice;
+  font-family: $ff-spartan;
 }
 p {
   line-height: 20px;
 }
 a {
-  color: $bistre;
+  color: $purple;
+  text-decoration: none;
 }
-a {
-  color: $bistre;
+a:hover {
+  color: $purple;
+  opacity: 0.8;
 }
 
 h1 {
   font-size: 55px;
   line-height: 63px;
-  //font-family: $ff-butler;
+  font-family: $ff-lust;
 }
 
 h2 {
   font-size: 40px;
   line-height: 48px;
-  //font-family: $ff-butler;
+  font-family: $ff-lust;
 }
 
 h3 {
   font-size: 24px;
   line-height: 27px;
-  //font-family: $ff-kulim;
+  font-family: $ff-lust;
   font-weight: 600;
 }
 
 h4 {
   font-size: 32px;
   line-height: 38px;
-  //font-family: $ff-butler;
+  font-family: $ff-lust;
 }
 
 button {
-  background-color: $bistre;
+  background-color: $ice;
   border-radius: 3px;
-  padding: 20px 26px 20px 26px;
+  padding: 15px 20px;
   border: none;
   a {
-    color: $albatre;
+    color: $purple;
     text-decoration: none;
     font-size: 16px;
-    //font-family: $ff-kulim;
+    font-family: $ff-spartan;
   }
   &:hover {
-    background-color: $bistre-hover;
     transform: scale(0.95);
     transition: 0.6s ease;
   }
@@ -82,15 +83,12 @@ button {
 
 .button-secondary {
   border-radius: 3px;
-  border: 1px solid $olive;
-  background-color: beige;
+  border: 1px solid $dark-gray;
+  background-color: $ice;
   a {
-    color: $olive;
+    color: $dark-gray;
     text-decoration: none;
     font-size: 16px;
-    //font-family: $ff-kulim;
-  }
-  &:hover {
-    background-color: $secondary-button-hover;
+    font-family: $ff-spartan;
   }
 }
