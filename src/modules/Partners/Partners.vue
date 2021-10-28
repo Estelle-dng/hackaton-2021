@@ -33,6 +33,8 @@ export default {
 <style lang="scss" scoped>
 .partners{
   background-color: $dark-gray;
+  background-image: url("../../../public/img/hero.jpg");
+  box-shadow: inset 0 0 100vw 100vw rgb(0 0 0 / 75%), 0 16px 8px -8px rgb(0 0 0 / 40%);
   #main-wrapper{
     color: $ice;
     padding-top:100px;
@@ -44,8 +46,10 @@ export default {
     margin-top: 55px;
     }
   h3{margin-bottom: 15px;}
-  h4{margin-bottom: 50px;}
-  p{margin-bottom: 50px;}
+  h4, p{
+    margin-bottom: 50px;
+    opacity: 0.8;
+  }
   img{
     height: 100%;
     width: 100%;

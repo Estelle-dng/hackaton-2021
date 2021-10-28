@@ -17,7 +17,7 @@
               Renseignez une courte description de votre projet
             </textarea>
             <div>
-              <p for="">Si vous souhaitez être contacté par téléphone :</p>
+              <p class="phone">Si vous souhaitez être contacté par téléphone :</p>
               <input type="text" placeholder="Votre Téléphone">
             </div>
             <Button
@@ -25,7 +25,7 @@
                 text="S'abonner"
                 ariaLabel="partner"
                 link="#partner"
-                className="button-secondary"
+                className="button"
                 classA="nav-a"
                 />
             </form>
@@ -50,13 +50,14 @@ export default {
   background-size: cover;
   padding:100px 0;
   width: 100vw;
-  h5{
-    margin-top : 30px;
-  }
   h5,h6,p{
     color:$dark-gray;
     margin-bottom: 30px;
     }
+  .phone{
+    margin-bottom: 0;
+  }  
+  .button{margin-top:15px;}
   form{ 
     justify-content: center;
     margin: 0 auto;

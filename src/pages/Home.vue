@@ -7,6 +7,7 @@
       <Hero />
       <StepsBloc />
       <Partners />
+      <About />
       <Newsletter />
     </main>
     <footer>
@@ -21,6 +22,7 @@ import Hero from "@/modules/Hero";
 import Partners from "@/modules/Partners";
 import Newsletter from "@/modules/Newsletter";
 import StepsBloc from "@/modules/StepsBloc";
+import About from "@/modules/About";
 import Footer from "@/components/Footer";
 export default {
   name: "Home",
@@ -30,7 +32,8 @@ export default {
     Footer,
     Partners,
     Newsletter,
-    StepsBloc
+    StepsBloc,
+    About
   },
 };
 </script>
