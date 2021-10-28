@@ -1,16 +1,16 @@
 <template>
   <div class="footer">
-    <a class="logo" href="#">
+    <a class="logo" href="#accueil">
       <img src="../../../public/logo.png" alt="logo" />
     </a>
     <div class="centerContent">
       <div class="nav">
         <ul>
-          <li><a href="#">Accueil</a></li>
-          <li><a href="#">Concept</a></li>
-          <li><a href="#">À propos</a></li>
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#concept">Concept</a></li>
+          <li><a href="#about">À propos</a></li>
           <li>
-            <a href="#">Nous contacter</a>
+            <a href="#contact">Nous contacter</a>
           </li>
         </ul>
       </div>

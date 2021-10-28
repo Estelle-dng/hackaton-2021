@@ -1,7 +1,7 @@
 <template>
   <Wrapper>
     <div class="hero"></div>
-    <nav class="navbar">
+    <nav class="navbar" id="accueil">
       <div>
         <a href="#accueil">
           <img class="logo" src="../../../public/logo-light.png" alt="logo" />
@@ -23,7 +23,7 @@
             :isRouter="false"
             text="Devenir partenaire"
             ariaLabel="partner"
-            link="#partner"
+            link="#partners"
             className="nav-button"
             classA="nav-a"
             />

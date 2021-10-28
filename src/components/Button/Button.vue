@@ -7,7 +7,6 @@
       :class="classA"
       v-else
       :href="link"
-      target="_blank"
       :aria-label="ariaLabel"
       >{{ text }}</a
     >

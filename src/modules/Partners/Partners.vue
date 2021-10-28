@@ -1,6 +1,6 @@
 <template>
 <Wrapper>
-  <div class="partners d-flex">
+  <div id="partners" class="partners d-flex">
       <div class="w50">
         <img src="../../../public/img/feature-desktop.png" alt="">
       </div>
@@ -12,7 +12,7 @@
               :isRouter="false"
               text="Proposez vos évènements"
               ariaLabel="partner"
-              link="#partner"
+              link="#contact"
               className="nav-button"
               classA="nav-a"
               />
