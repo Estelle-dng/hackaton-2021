@@ -10,7 +10,7 @@
       <div class="b line">
         <strong>
           <ul>
-            <li>Anouck</li>
+            <li>Anouk</li>
             <li>Clara</li>
             <li>Corentin</li>
             <li>Erwann</li>
@@ -27,13 +27,13 @@
       </div>
 
       <div class="f line">
-        <p>Notre envie était de rendre facilement accessible à tous toutes les formes d'arts, de culture ou d'évènements se déroulant dans notre ville de manière hebdomadaire</p>
+        <p>Notre envie était de rendre facilement accessible à tous, toutes les formes d'arts, de culture ou d'évènements se déroulant dans notre ville de manière hebdomadaire</p>
         <br><br>
-        <p>Après avoir consulté notre entourage et des professionnels du milieu, nous avons constaté le manque de mise en avant de certains artistes au profit des "best sellers" ce qui tue la diversité.</p>
+        <p>Après avoir consulté notre entourage et des professionnels du milieu, nous avons constaté le manque de mise en avant de certains artistes au profit des "best sellers" ce qui tuent la diversité.</p>
         <br><br>
-        <p>Nous avons donc voulu créer une plateforme où chacun pourrait participer et signaler un évènement près de chez lui.</p>
+        <p>Nous avons voulu créer une plateforme où chacun peut planifier des événements, en fonction du temps libre qu’il a.</p>
         <br><br>
-        <h6>C'est ainsi qu'est né Mosaë</h6>
+        <h6>Grâce à Mosaë, découvrez des lieux et faites de sorties originales !</h6>
       </div>
 
     </div>

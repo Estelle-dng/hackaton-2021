@@ -2,7 +2,7 @@
   <section class="main">
   <Wrapper>
       <section class="card-lg__container">
-        <p class="card__text-sm">Mosae - Votre guide culturel Bordelais</p>
+        <p class="card__text-sm">Mosaë - Votre guide culturel Bordelais</p>
         <h1 class="card__text-lg">Découvrir l'art de la ville</h1>
         <p class="card__text-md">Trouvez les évènements culturels près de chez vous.</p>
         <div class="d-flex">

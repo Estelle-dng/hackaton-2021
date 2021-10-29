@@ -6,17 +6,17 @@
         <Steps
           number="1"
           title="Des Weekly News"
-          text="Découvrez chaque semaine un selection d'évènements et de lieux à visiter dan votre ville."
+          text="Découvrez chaque semaine une selection d'évènements et de lieux à visiter dan votre ville."
         />
         <Steps
           number="2"
           title="Un planning personnalisé"
-          text="Sélectionnez les évènements qui vous intérèssent, nous vous créons un planning de vos future visites."
+          text="Sélectionnez les évènements qui vous intérèssent, nous vous créons un planning de vos futures visites."
         />
         <Steps
           number="3"
           title="À la découverte de l'inconnu"
-          text="Profitez de la culture comme vous ne l'avez jamais connue, sous toutes ses formes et participez vous aussi à l'agrandissement de notre planning !"
+          text="Profitez de la culture comme vous ne l'avez jamais connue, sous toutes ses formes et participez, vous aussi à l'agrandissement de notre planning !"
         />
       </div>
       <Button

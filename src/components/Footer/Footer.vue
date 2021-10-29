@@ -37,6 +37,7 @@ export default {
 
 <style lang="scss" scoped>
 .footer {
+  font-family: $ff-spartan;
   justify-content: space-between;
   display: flex;
   padding: 70px 120px 30px;
@@ -70,7 +71,6 @@ export default {
           a {
             color: $ice;
             font-size: 16px;
-            font-family: "ubuntu";
           }
         }
       }
@@ -79,7 +79,6 @@ export default {
       color: $ice;
       text-align: center;
       font-size: 14px;
-      font-family: "ubuntu";
     }
   }
   .socials {
@@ -90,7 +89,6 @@ export default {
     .rs {
       display: flex;
       font-size: 14px;
-      font-family: "ubuntu";
       img {
         height: 16px;
         width: 16px;

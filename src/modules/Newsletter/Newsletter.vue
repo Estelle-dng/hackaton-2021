@@ -22,7 +22,7 @@
             </div>
             <Button
                 :isRouter="false"
-                text="S'abonner"
+                text="Envoyer"
                 ariaLabel="partner"
                 link="#partner"
                 className="button"
@@ -80,7 +80,7 @@ export default {
   textarea{
     width: 95% !important;
     height: 150px;
-    margin-right: 30px;
+    margin-left: 0 !important;
     font-family: $ff-spartan;
   }
 }
